@@ -1,5 +1,5 @@
-import { CommonModule, CurrencyPipe, NgFor } from '@angular/common';
-import { Component, Input } from '@angular/core';
+import { CommonModule, CurrencyPipe,  } from '@angular/common';
+import { Component, input } from '@angular/core';
 import { InvestmentResult } from '../investment-result.model';
 
 @Component({
@@ -10,7 +10,7 @@ import { InvestmentResult } from '../investment-result.model';
   styleUrl: './investment-results.component.css'
 })
 export class InvestmentResultsComponent {
-  @Input() investmentResults?: InvestmentResult[];
+   investmentResults? = input<InvestmentResult[]>();
 
   
 }
